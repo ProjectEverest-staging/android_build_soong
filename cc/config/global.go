@@ -80,6 +80,7 @@ var (
 		// constexpr. Enabling this would require replacing many constants with
 		// macros, which is not a good trade-off.
 		"-Wno-gnu-folding-constant",
+		"-Wno-compound-token-split-by-macro",
 		// AIDL generated code redeclares pure virtual methods in each
 		// subsequent version of an interface, so this warning is currently
 		// infeasible to enable.
@@ -120,6 +121,8 @@ var (
 		// Force clang to always output color diagnostics. Ninja will strip the ANSI
 		// color codes if it is not running in a terminal.
 		"-fcolor-diagnostics",
+
+
 
 		// Turn off FMA which got enabled by default in clang-r445002 (http://b/218805949)
 		"-ffp-contract=off",
