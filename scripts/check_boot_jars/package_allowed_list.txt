@@ -261,6 +261,8 @@ org\.chromium\.arc\..*
 
 # Lineage adds
 vendor\.lineage.*
+lineageos\.platform
+org\.lineageos\.platform\.internal
 
 # NV adds
 com\.nvidia
